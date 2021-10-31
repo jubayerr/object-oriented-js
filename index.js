@@ -1,11 +1,18 @@
 // object
 
+const container = document.getElementById("container");
+
 const person = {
   fname: "Jonas",
   lname: "Kahnwald",
   age: 24,
+  fullName: function () {
+    return this.fname + " " + this.lname;
+  },
 };
 
-let p1 = person.fname + " " + person.lname;
+container.innerHTML = person.fullName();
 
-console.log(p1);
+console.log(person.fullName());
+
+// ... end
