@@ -1,1 +1,1 @@
-# oop-javascript
+# object-oriented-js
